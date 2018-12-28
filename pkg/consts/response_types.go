@@ -8,6 +8,9 @@ const (
 	Success = 20000 //正常返回
 	//controller 层的错误代码为4000开始
 	BindingJsonErr = 40000 // 绑定json失败
+	GetFileErr     = 40008 // 获取上传文件失败
+	PathParamErr   = 40008 // url参数错误
+	UpdateIdErr    = 40009 // 更新ID错误
 
 	//service 层的错误代码从50000开始	common.GenResponse(c, consts.Success, response, "")
 	ServerErr             = 50000 //
@@ -15,6 +18,8 @@ const (
 	UserNameOrPasswordErr = 50006 // 用户名或密码错误
 	PermissionErr         = 50007 // 没有权限
 	TokenValidErr         = 50008 // token无效
+	FilelUploadErr        = 50009 //文件上传失败
+	MigrationErr          = 50010 // 升级失败
 
 	//repository层的错误代码从60000开始
 	DBInSertErr = 60000 // 数据插入失败
